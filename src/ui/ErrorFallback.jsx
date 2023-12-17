@@ -41,7 +41,12 @@ export default function ErrorFallback({ error, resetErrorBoundary }) {
                 <Box>
                     <Heading as="h1">Something went wrong</Heading>
                     <p>{error.message}</p>
-                    <Button onClick={resetErrorBoundary} size='large'>Try Again</Button>
+                    <Button
+                        onClick={resetErrorBoundary}
+                        size="large"
+                    >
+                        Try Again
+                    </Button>
                 </Box>
             </StyledErrorFallback>
         </GlobalStyles>
